@@ -62,11 +62,9 @@ back_to_top_text: "Back to top ↑"
 
 # Aux links (top-right corner)
 aux_links:
-  "🌐 marcogrimaldi29.com":
+  "🏠 Personal Hub of Marco Grimaldi":
     - "https://marcogrimaldi29.com"
-  "📘 AZ-305 Main Notes":
-    - "https://marcogrimaldi29.com/az-305-study-notes/"
-
+    
 aux_links_new_tab: true
 
 # Footer
