@@ -145,13 +145,13 @@ flowchart LR
 
 ## Azure Database Migration Service (DMS)
 
-DMS migrates **databases** to Azure with minimal downtime using online (continuous sync) or offline (one-time bulk load) modes.
+DMS migrates **databases** to Azure using online (continuous sync) or offline (one-time bulk load) modes, depending on the target. Not all targets support online migration — Azure SQL Database is **offline only**.
 
 | Source | Target | Mode |
 |--------|--------|------|
-| SQL Server (on-prem / VM) | Azure SQL Database | Online (CDC) + Offline |
+| SQL Server (on-prem / VM) | Azure SQL Database | **Offline only** ⚠️ |
 | SQL Server (on-prem / VM) | Azure SQL Managed Instance | Online (CDC) + Offline |
-| SQL Server (on-prem / VM) | SQL Server on Azure VM | Offline (backup/restore) |
+| SQL Server (on-prem / VM) | SQL Server on Azure VM | Online + Offline |
 | MySQL (on-prem) | Azure Database for MySQL | Online + Offline |
 | PostgreSQL (on-prem) | Azure Database for PostgreSQL | Online + Offline |
 | Oracle | Azure Database for PostgreSQL | Offline |
@@ -164,7 +164,9 @@ DMS migrates **databases** to Azure with minimal downtime using online (continuo
 | **Standard (shared)** | Small migrations, offline only | ❌ |
 | **Premium (dedicated)** | Large databases, online (near-zero downtime) | ✅ |
 
-> ⚠️ **Exam Caveat — DMS Premium for Online Migration:** Near-zero downtime online migration using **Change Data Capture (CDC)** requires the **Premium SKU**. The Standard SKU only supports offline (full dump and restore) migrations. If the scenario says "migrate a 2 TB SQL database with minimal downtime", the answer is **DMS Premium**.
+> ⚠️ **Exam Caveat — Azure SQL Database: Offline Only:** Online (CDC) migration is **not available** for Azure SQL Database as a DMS target. Only offline migration is supported, which means application downtime starts when the migration begins. If the scenario requires near-zero downtime migration to Azure SQL Database, the answer is **not DMS** — instead, consider transactional replication or other third-party tools. If the scenario specifies **Azure SQL Managed Instance** with minimal downtime, the answer is **DMS Premium** (online/CDC mode).
+
+> ⚠️ **Exam Caveat — DMS (classic) Retired March 2026:** DMS (classic) SQL Server scenarios were retired on **March 15, 2026**. The current recommended tool is the **Azure SQL Migration extension for Azure Data Studio** (powered by the newer DMS), which supports the same scenario matrix above.
 
 ---
 
@@ -185,7 +187,8 @@ DMS migrates **databases** to Azure with minimal downtime using online (continuo
 | Discover on-premises VMware estate without agents | **Azure Migrate appliance** (agentless) |
 | Right-size Azure VMs based on actual usage | **Azure Migrate assessment** — performance-based sizing |
 | Map dependencies between VMs before migration | **Dependency analysis** (agentless for VMware, agent-based for Hyper-V) |
-| Migrate SQL Server to Azure SQL MI with minimal downtime | **DMS Premium** (online/CDC mode) |
+| Migrate SQL Server to **Azure SQL MI** with minimal downtime | **DMS Premium** (online/CDC mode) |
+| Migrate SQL Server to **Azure SQL Database** with minimal downtime | DMS only supports **offline** for SQL DB — consider transactional replication or plan for downtime |
 | Assess SQL Server compatibility before migration | **Data Migration Assistant (DMA)** |
 | Validate migrated VMs before cutting over production | **Test Migration** (isolated VNet) |
 | Migrate Oracle database to Azure PostgreSQL | **SSMA** (SQL Server Migration Assistant) |
