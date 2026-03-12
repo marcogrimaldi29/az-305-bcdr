@@ -27,7 +27,7 @@ mermaid: true
 
 ---
 
-## 🗺️ What's in This Repository?
+## 🗺 What's in This Repository?
 
 | File | Coverage |
 |------|----------|
