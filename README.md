@@ -4,7 +4,7 @@
 
 [![Deploy to GitHub Pages](https://github.com/marcogrimaldi29/az-305-bcdr/actions/workflows/pages.yml/badge.svg)](https://github.com/marcogrimaldi29/az-305-bcdr/actions/workflows/pages.yml)
 [![GitHub Pages Live](https://img.shields.io/badge/GitHub%20Pages-Live-brightgreen?logo=github)](https://marcogrimaldi29.com/az-305-bcdr/)
-[![Personal Hub](https://img.shields.io/badge/Blog-marcogrimaldi29.com-blue?logo=rss)](https://marcogrimaldi29.com)
+[![marcogrimaldi29.com](https://img.shields.io/badge/Blog-marcogrimaldi29.com-blue?logo=rss)](https://marcogrimaldi29.com)
 [![AZ-305 Main Notes](https://img.shields.io/badge/AZ--305-Main%20Notes-blue?logo=microsoftazure)](https://marcogrimaldi29.com/az-305-study-notes/)
 
 > - 🎯 **Goal:** Master High Availability, Backup, Disaster Recovery, and Migration for the **AZ-305** exam
@@ -66,7 +66,7 @@ Additional study notes maintained by me are also available for those pursuing Mi
 
 These notes are maintained by **[Marco Grimaldi](https://www.linkedin.com/in/marco-grimaldi29/)** — Cloud Consultant, Language Trainer & Lifelong Learner.
 
-📍 **Find more content at [🌐 marcogrimaldi29.com](https://marcogrimaldi29.com)**
+📍 **Find more content at [🏠 marcogrimaldi29.com](https://marcogrimaldi29.com)**
 
 > The website is continuously updated and based on my personal study notes and experiences. If you have any feedback, suggestions, or corrections, feel free to [reach out](https://marcogrimaldi29.com/contact/)!
 
