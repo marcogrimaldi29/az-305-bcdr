@@ -14,7 +14,7 @@ mermaid: true
 {: .fs-5 .fw-300 }
 
 [![Deploy to GitHub Pages](https://github.com/marcogrimaldi29/az-305-bcdr/actions/workflows/pages.yml/badge.svg)](https://github.com/marcogrimaldi29/az-305-bcdr/actions/workflows/pages.yml)
-[![Personal Hub](https://img.shields.io/badge/Blog-marcogrimaldi29.com-blue?logo=rss)](https://marcogrimaldi29.com)
+[![marcogrimaldi29.com](https://img.shields.io/badge/Blog-marcogrimaldi29.com-blue?logo=rss)](https://marcogrimaldi29.com)
 
 [Start Studying →](/az-305-bcdr/01-high-availability/){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
 [View on GitHub](https://github.com/marcogrimaldi29/az-305-bcdr){: .btn .fs-5 .mb-4 .mb-md-0 }
