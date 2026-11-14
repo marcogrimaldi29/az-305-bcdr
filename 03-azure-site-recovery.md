@@ -2,7 +2,7 @@
 layout: default
 title: "03 — Azure Site Recovery"
 nav_order: 4
-description: "Deep dive into Azure Site Recovery — vault types, agents, policies, soft delete, immutable vault, cross-region restore, and exam caveats."
+description: "Deep dive into Azure Site Recovery — replication scenarios, key components, RPO and RTO, recovery plans, failover types, replication policy, and exam caveats."
 permalink: /03-azure-site-recovery/
 mermaid: true
 ---

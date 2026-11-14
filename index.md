@@ -45,9 +45,10 @@ mermaid: true
 
 This domain is explicitly tested across **two exam skill areas** and touches every layer of Azure architecture design:
 
-- **Design for High Availability (15–20%):** Region pairs, Availability Zones, redundant services, SLA composition, global load balancing
-- **Design for Backup and Disaster Recovery (10–15%):** RTO/RPO targets, Backup vs Site Recovery selection, vault configuration, cross-region restore
-- **Design Migrations (10–15%):** Migration strategy selection, Azure Migrate tooling, database migration, VMware workload migration via AVS or HCX
+- **Design business continuity solutions (15–20%):**
+  - **Design for high availability:** Region pairs, Availability Zones, redundant services, SLA composition, global load balancing
+  - **Design solutions for backup and disaster recovery:** RTO/RPO targets, Backup vs Site Recovery selection, vault configuration, cross-region restore
+- **Design infrastructure solutions (30–35%), under Design migrations:** Migration strategy selection, Azure Migrate tooling, database migration, VMware workload migration via AVS or HCX
 
 > ⚠️ **The most common exam trap in this domain:** Confusing **High Availability** (staying up during failures) with **Disaster Recovery** (recovering after a failure). HA is about eliminating single points of failure. DR is about restoring service when HA has already failed. These require different services, different RPO/RTO targets, and different cost profiles.
 
