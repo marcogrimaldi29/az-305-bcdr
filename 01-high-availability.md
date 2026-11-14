@@ -2,7 +2,7 @@
 layout: default
 title: "01 — High Availability Design"
 nav_order: 2
-description: "Deep dive into Azure SQL Database, Managed Instance, and SQL Server on VM — deployment options, feature comparisons, HA, geo-replication, security, migration scenarios, and exam caveats."
+description: "Deep dive into high availability design — HA vs DR, region pairs, Availability Zones, SLA composition, load balancing and global routing, HA patterns by service, and exam caveats."
 permalink: /01-high-availability/
 mermaid: true
 ---
